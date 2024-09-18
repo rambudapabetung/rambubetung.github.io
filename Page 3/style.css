@@ -1,0 +1,113 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+section{
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  padding:100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+body {
+
+ background-image: url('BG2.png');
+  margin: 30px 0 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  margin: 5px 15px;
+  gap:20px;
+  position: relative;
+}
+
+.card {
+
+  background-color: #E8BE99;
+  width: 100%;
+  height: auto;
+  grid-column: span 8;
+  grid-row: span 1;;
+  margin: 10px 0;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 10px 10px rgba(0,0,0,.1);
+
+}
+
+.head-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.body-card {
+  padding: 10px 15px;
+}
+
+.body-card h1 {
+  margin: 0;  
+
+}
+
+.body-card svg {
+  width: 31px;
+  position: absolute;
+  bottom: 7px;
+  right: 20px;
+}
+
+footer{
+  background: #000;
+  padding-top: 5rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+footer .brand{
+  font-family: #fff;
+  letter-spacing: 2px;
+}
+footer a{
+  transition: color 0.3s ease;
+}
+footer a:hover;{
+  color: #fff
+}
+
+
+@media screen and (min-width: 550px) {
+  .card {
+  grid-column: span 4;
+  grid-row: span 1;
+
+
+}
+
+
+@media screen and (min-width: 760px) {
+
+  .card {
+  width: 350px;
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 960px) {
+
+}

@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('BG5.png');
+}
+
+section{
+  position: relative;
+  height: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.swiper{
+   width: 850px;
+}
+
+
+section .card .image{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background:    #B9714B;
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card{
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background: #DABA86;
+  border-radius: 15px 15px 0 0;
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+.name-profession .name{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background:    #DABA86;
+}
